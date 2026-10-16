@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ثم تهكيرك</title>
+<style>
+:root{color-scheme:dark;--bg:#090d18;--panel:#111a2d;--cyan:#63f3e7;--purple:#9b7bff;--text:#f5f7ff}
+*{box-sizing:border-box}body{margin:0;min-height:100vh;display:grid;place-items:center;background:radial-gradient(ellipse at 20% 20%,#1c2450 0,transparent 45%),radial-gradient(ellipse at 80% 80%,#173d46 0,transparent 40%),var(--bg);font-family:Tahoma,Arial,sans-serif;color:var(--text);overflow:hidden}
+main{width:min(90vw,720px);padding:clamp(28px,7vw,64px) 22px;text-align:center;border:1px solid #7c8cff55;border-radius:28px;background:linear-gradient(145deg,#151d34dd,#0c1222ee);box-shadow:0 25px 90px #0008;position:relative;isolation:isolate}
+main:before{content:"";position:absolute;inset:-1px;border-radius:28px;padding:1px;background:linear-gradient(120deg,var(--cyan),transparent 40%,var(--purple));-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude;pointer-events:none;z-index:-1}
+.tag{display:inline-block;color:var(--cyan);border:1px solid #63f3e755;background:#63f3e711;padding:8px 14px;border-radius:999px;font-size:13px;letter-spacing:1px}h1{font-size:clamp(38px,9vw,78px);margin:28px 0 12px;line-height:1.2;letter-spacing:-2px;text-shadow:0 0 30px #63f3e744}h1 span{color:var(--cyan)}p{color:#b8c4df;font-size:clamp(15px,3vw,18px);line-height:1.9;margin:0 auto 30px;max-width:490px}.button{border:0;border-radius:12px;padding:13px 22px;color:#07131b;background:linear-gradient(100deg,var(--cyan),#a6ffe9);font-weight:700;font-size:15px;cursor:pointer;box-shadow:0 8px 28px #63f3e733;transition:transform .2s,filter .2s}.button:hover{transform:translateY(-2px);filter:brightness(1.08)}#message{min-height:30px;margin-top:20px;color:var(--purple);font-weight:bold}.dots{position:absolute;inset:0;pointer-events:none;opacity:.4;background-image:radial-gradient(#91a8ff 1px,transparent 1px);background-size:34px 34px;mask-image:linear-gradient(transparent,#000,transparent)}
+</style>
+</head>
+<body><div class="dots"></div><main><div class="tag">◈ &nbsp; SYSTEM ONLINE</div><h1>ثم <span>تهكيرك</span></h1><p>هذه صفحة تجريبية بطابع تقني مستقبلي — مجرد تصميم بصري للمرح، ولا تقوم بأي اختراق حقيقي.</p><button class="button" id="btn">اضغط هنا</button><div id="message" aria-live="polite"></div></main>
+<script>const btn=document.getElementById('btn'),message=document.getElementById('message');btn.addEventListener('click',()=>{message.textContent='😂 تم تفعيل وضع المزاح بنجاح!';btn.textContent='تم التفعيل ✓';});</script></body></html>
